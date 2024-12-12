@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module leaderboards</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>leaderboards</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/sartaj/group35/ProBot/leaderboards.py">/Users/sartaj/group35/ProBot/leaderboards.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;Import&nbsp;the&nbsp;pygame&nbsp;library&nbsp;which&nbsp;is&nbsp;used&nbsp;for&nbsp;creating&nbsp;video&nbsp;games&nbsp;with&nbsp;Python.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="pygame.html">pygame</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="leaderboards.html#Leaderboard">Leaderboard</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Leaderboard">class <strong>Leaderboard</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Leaderboard">Leaderboard</a>(level,&nbsp;user_dict)<br>
+&nbsp;<br>
+A&nbsp;class&nbsp;to&nbsp;represent&nbsp;a&nbsp;leaderboard&nbsp;for&nbsp;displaying&nbsp;user&nbsp;scores&nbsp;for&nbsp;a&nbsp;specific&nbsp;level.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;level&nbsp;(int):&nbsp;The&nbsp;level&nbsp;number&nbsp;for&nbsp;which&nbsp;the&nbsp;leaderboard&nbsp;is&nbsp;being&nbsp;displayed.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;user_dict&nbsp;(dict):&nbsp;A&nbsp;dictionary&nbsp;of&nbsp;User&nbsp;objects&nbsp;containing&nbsp;the&nbsp;user&nbsp;data.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Leaderboard-__init__"><strong>__init__</strong></a>(self, level, user_dict)</dt><dd><tt>Constructs&nbsp;all&nbsp;the&nbsp;necessary&nbsp;attributes&nbsp;for&nbsp;the&nbsp;<a href="#Leaderboard">Leaderboard</a>&nbsp;<a href="builtins.html#object">object</a>.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;level&nbsp;(int):&nbsp;The&nbsp;level&nbsp;number&nbsp;for&nbsp;which&nbsp;the&nbsp;leaderboard&nbsp;is&nbsp;being&nbsp;displayed.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;user_dict&nbsp;(dict):&nbsp;A&nbsp;dictionary&nbsp;of&nbsp;User&nbsp;objects&nbsp;containing&nbsp;the&nbsp;user&nbsp;data.</tt></dd></dl>
+
+<dl><dt><a name="Leaderboard-display_leaderboard"><strong>display_leaderboard</strong></a>(self, screen)</dt><dd><tt>Displays&nbsp;the&nbsp;leaderboard&nbsp;on&nbsp;the&nbsp;specified&nbsp;Pygame&nbsp;screen.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;screen:&nbsp;The&nbsp;Pygame&nbsp;screen&nbsp;<a href="builtins.html#object">object</a>&nbsp;where&nbsp;the&nbsp;leaderboard&nbsp;will&nbsp;be&nbsp;displayed.</tt></dd></dl>
+
+<dl><dt><a name="Leaderboard-get_average_overall_score"><strong>get_average_overall_score</strong></a>(self)</dt><dd><tt>Calculates&nbsp;the&nbsp;average&nbsp;score&nbsp;across&nbsp;all&nbsp;levels.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;float:&nbsp;The&nbsp;average&nbsp;score&nbsp;across&nbsp;all&nbsp;levels.</tt></dd></dl>
+
+<dl><dt><a name="Leaderboard-get_average_score"><strong>get_average_score</strong></a>(self)</dt><dd><tt>Calculates&nbsp;the&nbsp;average&nbsp;score&nbsp;for&nbsp;the&nbsp;current&nbsp;level.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;float:&nbsp;The&nbsp;average&nbsp;score&nbsp;for&nbsp;the&nbsp;level,&nbsp;or&nbsp;None&nbsp;if&nbsp;no&nbsp;users&nbsp;have&nbsp;scored.</tt></dd></dl>
+
+<dl><dt><a name="Leaderboard-get_highest_overall_score"><strong>get_highest_overall_score</strong></a>(self)</dt><dd><tt>Finds&nbsp;the&nbsp;highest&nbsp;score&nbsp;across&nbsp;all&nbsp;levels.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;A&nbsp;string&nbsp;representing&nbsp;the&nbsp;user&nbsp;with&nbsp;the&nbsp;highest&nbsp;overall&nbsp;score,&nbsp;the&nbsp;score&nbsp;itself,&nbsp;and&nbsp;the&nbsp;level.</tt></dd></dl>
+
+<dl><dt><a name="Leaderboard-get_highest_score"><strong>get_highest_score</strong></a>(self)</dt><dd><tt>Finds&nbsp;the&nbsp;highest&nbsp;score&nbsp;for&nbsp;the&nbsp;current&nbsp;level.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;A&nbsp;string&nbsp;representing&nbsp;the&nbsp;user&nbsp;with&nbsp;the&nbsp;highest&nbsp;score&nbsp;and&nbsp;the&nbsp;score&nbsp;itself.</tt></dd></dl>
+
+<dl><dt><a name="Leaderboard-get_lowest_overall_score"><strong>get_lowest_overall_score</strong></a>(self)</dt><dd><tt>Finds&nbsp;the&nbsp;lowest&nbsp;score&nbsp;across&nbsp;all&nbsp;levels.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;A&nbsp;string&nbsp;representing&nbsp;the&nbsp;user&nbsp;with&nbsp;the&nbsp;lowest&nbsp;overall&nbsp;score,&nbsp;the&nbsp;score&nbsp;itself,&nbsp;and&nbsp;the&nbsp;level.</tt></dd></dl>
+
+<dl><dt><a name="Leaderboard-get_lowest_score"><strong>get_lowest_score</strong></a>(self)</dt><dd><tt>Finds&nbsp;the&nbsp;lowest&nbsp;score&nbsp;for&nbsp;the&nbsp;current&nbsp;level.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;A&nbsp;string&nbsp;representing&nbsp;the&nbsp;user&nbsp;with&nbsp;the&nbsp;lowest&nbsp;score&nbsp;and&nbsp;the&nbsp;score&nbsp;itself.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

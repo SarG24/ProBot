@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module input_box</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>input_box</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/sartaj/group35/ProBot/input_box.py">/Users/sartaj/group35/ProBot/input_box.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;Import&nbsp;the&nbsp;pygame&nbsp;library&nbsp;which&nbsp;is&nbsp;used&nbsp;for&nbsp;creating&nbsp;video&nbsp;games&nbsp;with&nbsp;Python.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="pygame.html">pygame</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="input_box.html#DropDown">DropDown</a>
+</font></dt><dt><font face="helvetica, arial"><a href="input_box.html#InputBox">InputBox</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="DropDown">class <strong>DropDown</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#DropDown">DropDown</a>(color_menu,&nbsp;color_option,&nbsp;pos,&nbsp;size,&nbsp;main,&nbsp;options)<br>
+&nbsp;<br>
+A&nbsp;class&nbsp;representing&nbsp;a&nbsp;dropdown&nbsp;menu&nbsp;in&nbsp;a&nbsp;pygame&nbsp;application.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color_menu&nbsp;(tuple):&nbsp;Color&nbsp;tuple&nbsp;for&nbsp;the&nbsp;menu.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color_option&nbsp;(tuple):&nbsp;Color&nbsp;tuple&nbsp;for&nbsp;the&nbsp;options.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;rect&nbsp;(pygame.Rect):&nbsp;Rectangular&nbsp;area&nbsp;representing&nbsp;the&nbsp;dropdown.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;font&nbsp;(pygame.font.Font):&nbsp;Font&nbsp;<a href="builtins.html#object">object</a>&nbsp;used&nbsp;for&nbsp;rendering&nbsp;text.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;main&nbsp;(str):&nbsp;The&nbsp;currently&nbsp;selected&nbsp;option.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;options&nbsp;(list):&nbsp;List&nbsp;of&nbsp;available&nbsp;options.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;draw_menu&nbsp;(bool):&nbsp;Indicates&nbsp;whether&nbsp;to&nbsp;draw&nbsp;the&nbsp;dropdown&nbsp;menu.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;menu_active&nbsp;(bool):&nbsp;Indicates&nbsp;whether&nbsp;the&nbsp;menu&nbsp;is&nbsp;active.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;active_option&nbsp;(int):&nbsp;Index&nbsp;of&nbsp;the&nbsp;currently&nbsp;active&nbsp;option.<br>
+&nbsp;<br>
+Methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#DropDown-__init__">__init__</a>(color_menu,&nbsp;color_option,&nbsp;pos,&nbsp;size,&nbsp;main,&nbsp;options):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Initialize&nbsp;the&nbsp;<a href="#DropDown">DropDown</a>&nbsp;instance.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#DropDown-draw">draw</a>(surf):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Draw&nbsp;the&nbsp;dropdown&nbsp;menu.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#DropDown-update">update</a>(event):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Update&nbsp;the&nbsp;dropdown&nbsp;menu&nbsp;based&nbsp;on&nbsp;events.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="DropDown-__init__"><strong>__init__</strong></a>(self, color_menu, color_option, pos, size, main, options)</dt><dd><tt>Initialize&nbsp;the&nbsp;<a href="#DropDown">DropDown</a>&nbsp;instance.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color_menu&nbsp;(tuple):&nbsp;Color&nbsp;tuple&nbsp;for&nbsp;the&nbsp;menu.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color_option&nbsp;(tuple):&nbsp;Color&nbsp;tuple&nbsp;for&nbsp;the&nbsp;options.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pos&nbsp;(tuple):&nbsp;The&nbsp;(x,&nbsp;y)&nbsp;position&nbsp;of&nbsp;the&nbsp;dropdown.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;size&nbsp;(tuple):&nbsp;The&nbsp;(width,&nbsp;height)&nbsp;of&nbsp;the&nbsp;dropdown.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;main&nbsp;(str):&nbsp;The&nbsp;initially&nbsp;selected&nbsp;option.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;options&nbsp;(list):&nbsp;List&nbsp;of&nbsp;available&nbsp;options.</tt></dd></dl>
+
+<dl><dt><a name="DropDown-draw"><strong>draw</strong></a>(self, surf)</dt><dd><tt>Draw&nbsp;the&nbsp;dropdown&nbsp;menu.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;surf&nbsp;(pygame.Surface):&nbsp;The&nbsp;surface&nbsp;to&nbsp;draw&nbsp;on.</tt></dd></dl>
+
+<dl><dt><a name="DropDown-update"><strong>update</strong></a>(self, event)</dt><dd><tt>Update&nbsp;the&nbsp;dropdown&nbsp;menu&nbsp;based&nbsp;on&nbsp;events.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;event&nbsp;(pygame.event.Event):&nbsp;The&nbsp;event&nbsp;to&nbsp;handle.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int:&nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;selected&nbsp;option,&nbsp;or&nbsp;-1&nbsp;if&nbsp;no&nbsp;option&nbsp;selected.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="InputBox">class <strong>InputBox</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#InputBox">InputBox</a>(pos,&nbsp;size)<br>
+&nbsp;<br>
+A&nbsp;class&nbsp;representing&nbsp;a&nbsp;text&nbsp;input&nbsp;box&nbsp;in&nbsp;a&nbsp;pygame&nbsp;application.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;size&nbsp;(tuple):&nbsp;A&nbsp;tuple&nbsp;containing&nbsp;the&nbsp;width&nbsp;and&nbsp;height&nbsp;of&nbsp;the&nbsp;input&nbsp;box.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;base_font&nbsp;(pygame.font.Font):&nbsp;The&nbsp;font&nbsp;<a href="builtins.html#object">object</a>&nbsp;used&nbsp;for&nbsp;rendering&nbsp;text.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;user_text&nbsp;(str):&nbsp;The&nbsp;text&nbsp;entered&nbsp;by&nbsp;the&nbsp;user.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;input_rect&nbsp;(pygame.Rect):&nbsp;A&nbsp;rectangular&nbsp;area&nbsp;representing&nbsp;the&nbsp;input&nbsp;box.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;active&nbsp;(bool):&nbsp;Indicates&nbsp;whether&nbsp;the&nbsp;input&nbsp;box&nbsp;is&nbsp;currently&nbsp;active&nbsp;for&nbsp;text&nbsp;entry.<br>
+&nbsp;<br>
+Methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#InputBox-__init__">__init__</a>(pos,&nbsp;size):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Initialize&nbsp;the&nbsp;<a href="#InputBox">InputBox</a>&nbsp;instance.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#InputBox-take_input">take_input</a>(event):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Handle&nbsp;events&nbsp;for&nbsp;the&nbsp;input&nbsp;box,&nbsp;such&nbsp;as&nbsp;text&nbsp;entry&nbsp;and&nbsp;focusing.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#InputBox-draw">draw</a>(screen):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Draw&nbsp;the&nbsp;input&nbsp;box&nbsp;and&nbsp;entered&nbsp;text&nbsp;on&nbsp;the&nbsp;screen.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="InputBox-__init__"><strong>__init__</strong></a>(self, pos, size)</dt><dd><tt>Initialize&nbsp;the&nbsp;<a href="#InputBox">InputBox</a>&nbsp;instance.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pos&nbsp;(tuple):&nbsp;The&nbsp;(x,&nbsp;y)&nbsp;position&nbsp;of&nbsp;the&nbsp;input&nbsp;box.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;size&nbsp;(tuple):&nbsp;The&nbsp;(width,&nbsp;height)&nbsp;of&nbsp;the&nbsp;input&nbsp;box.</tt></dd></dl>
+
+<dl><dt><a name="InputBox-draw"><strong>draw</strong></a>(self, screen)</dt><dd><tt>Draw&nbsp;the&nbsp;input&nbsp;box&nbsp;and&nbsp;entered&nbsp;text&nbsp;on&nbsp;the&nbsp;screen.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;screen&nbsp;(pygame.Surface):&nbsp;The&nbsp;surface&nbsp;to&nbsp;draw&nbsp;on.</tt></dd></dl>
+
+<dl><dt><a name="InputBox-take_input"><strong>take_input</strong></a>(self, event)</dt><dd><tt>Handle&nbsp;events&nbsp;for&nbsp;the&nbsp;input&nbsp;box.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;event&nbsp;(pygame.event.Event):&nbsp;The&nbsp;event&nbsp;to&nbsp;handle.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bool:&nbsp;True&nbsp;if&nbsp;the&nbsp;user&nbsp;has&nbsp;finished&nbsp;typing&nbsp;(Enter/Return&nbsp;key&nbsp;pressed),&nbsp;False&nbsp;otherwise.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
